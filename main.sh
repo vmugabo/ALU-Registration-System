@@ -2,7 +2,9 @@
 
 # Function to create a student record # Kellen
 create_student() {
-  echo "Create function ";
+echo "enter student's email"
+read email
+
 }
 
 # Function to view all students  # Kellen
