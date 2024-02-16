@@ -16,7 +16,9 @@ echo "Students records  recorded successfully"
 
 # Function to view all students  # Kellen
 view_students() {
-  echo "View function ";
+echo "students records:"
+cat students-list_1023.txt
+
 }
 
 # Function to delete a student record # Anselme
