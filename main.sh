@@ -3,7 +3,9 @@
 # Function to create a student record # Kellen
 create_student() {
 echo "enter student's email"
-read email
+read studentemail
+echo "enter student age"
+read studentage
 
 }
 
