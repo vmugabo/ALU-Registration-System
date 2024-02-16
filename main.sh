@@ -12,7 +12,11 @@ view_students() {
 
 # Function to delete a student record # Anselme
 delete_student() {
-  echo "Delete function ";
+  echo "Enter student ID to delete:"
+  read id
+  updated = $(sed "/\b$id\b/d" ./students-list_1023.txt)
+  echo $updated > ./students-list_1023.txt
+  echo "Student record deleted successfully."
 }
 
 # Function to update a student record # Anselme
