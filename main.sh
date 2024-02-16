@@ -6,6 +6,9 @@ echo "enter student's email"
 read studentemail
 echo "enter student age"
 read studentage
+echo "enter the student's ID"
+read studentid
+
 
 }
 
