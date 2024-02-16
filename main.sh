@@ -2,22 +2,22 @@
 
 # Function to create a student record # Kellen
 create_student() {
-
+  echo "Create function ";
 }
 
 # Function to view all students  # Kellen
 view_students() {
-
+  echo "View function ";
 }
 
 # Function to delete a student record # Mugabo
 delete_student() {
-
+  echo "Delete function ";
 }
 
 # Function to update a student record # Mugabo
 update_student() {
-
+  echo "Update function ";
 }
 
 # Main menu
