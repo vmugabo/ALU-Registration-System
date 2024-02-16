@@ -2,12 +2,23 @@
 
 # Function to create a student record # Kellen
 create_student() {
-  echo "Create function ";
+echo "enter student's email"
+read studentemail
+echo "enter student age"
+read studentage
+echo "enter the student's ID"
+read studentid
+echo "$studentid, $studentage, $studentemail" >> students-list_1023.txt
+echo "Students records  recorded successfully"
+
+
 }
 
 # Function to view all students  # Kellen
 view_students() {
-  echo "View function ";
+echo "students records:"
+cat students-list_1023.txt
+
 }
 
 # Function to delete a student record # Anselme
