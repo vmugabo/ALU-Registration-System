@@ -10,12 +10,12 @@ view_students() {
   echo "View function ";
 }
 
-# Function to delete a student record # Mugabo
+# Function to delete a student record # Anselme
 delete_student() {
   echo "Delete function ";
 }
 
-# Function to update a student record # Mugabo
+# Function to update a student record # Anselme
 update_student() {
   echo "Update function ";
 }
