@@ -23,12 +23,22 @@ cat students-list_1023.txt
 
 # Function to delete a student record # Anselme
 delete_student() {
-  echo "Delete function ";
+  echo "Enter student ID to delete:"
+  read id
+  sed -i "/\b$id\b/d" ./students-list_1023.txt
+  echo "Student record deleted successfully."
 }
 
 # Function to update a student record # Anselme
 update_student() {
-  echo "Update function ";
+  echo "Enter student ID to update:"
+  read id
+  echo "Enter updated email:"
+  read email
+  echo "Enter updated age:"
+  read age
+  sed -i "s/\b$id\b/$email $age $id/" students-list_1023.txt
+  echo "Student record updated successfully."
 }
 
 # Main menu
