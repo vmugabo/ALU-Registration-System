@@ -9,7 +9,7 @@ read studentage
 echo "enter the student's ID"
 read studentid
 
-printf "%-20s\t%-10s\t%-10s\n" "$studentemail" "$studentage" "$studentid" >> students-list_1023.txt
+printf "%-20s\t%-10s\t%-10s\n" "$studentemail", "$studentage", "$studentid" >> students-list_1023.txt
 
 echo "Students records  recorded successfully"
 
