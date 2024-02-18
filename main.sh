@@ -15,9 +15,13 @@ echo "Students records  recorded successfully"
 }
 
 # Function to view all students  # Kellen
-view_students() {
-echo "students records:"
-cat students-list_1023.txt
+view_all_students() {
+    echo "List of all students:"
+    echo "+------------------+-----+---------+"
+    echo "| Student ID       | Age | Email   |"
+    echo "+------------------+-----+---------+"
+    awk -F ',' '{printf "| %-16s | %-3s | %-9s |\n", $1, $2, $3}' students-list_1023.txt
+    echo "+------------------+-----+---------+"
 
 }
 
@@ -54,7 +58,7 @@ while true; do
 
     case $choice in
         1) create_student ;;
-        2) view_students ;;
+        2) view_all_students ;;
         3) delete_student ;;
         4) update_student ;;
         5) echo "Exiting the application." ; exit ;;
