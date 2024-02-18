@@ -17,12 +17,11 @@ echo "Students records  recorded successfully"
 # Function to view all students  # Kellen
 view_all_students() {
     echo "List of all students:"
-    echo "+------------------+-----+---------+"
-    echo "| Student ID       | Age | Email   |"
-    echo "+------------------+-----+---------+"
-    awk -F ',' '{printf "| %-16s | %-3s | %-9s |\n", $1, $2, $3}' students-list_1023.txt
-    echo "+------------------+-----+---------+"
-
+    echo "+------------------+-----+----------------------------+"
+    echo "| Student ID       | Age | Email                      |"
+    echo "+------------------+-----+----------------------------+"
+    awk -F ',' '{printf "| %-16s | %-3s | %-9s|\n", $1, $2, $3}' students-list_1023.txt
+    echo "+------------------+-----+----------------------------+"
 }
 
 # Function to delete a student record # Anselme
