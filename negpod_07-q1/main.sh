@@ -48,8 +48,8 @@ update_student() {
 
 # Main menu
 while true; do
-    echo " ======== NegPod 7 Student Management System ======= "
-    echo "What do you want to achieve:"
+    echo " ======== NegPod 7 ALU Student Registration System ======= "
+    echo " ================ Select your action: ==================="
     echo "1. Create student record"
     echo "2. View all students"
     echo "3. Delete a student record"
@@ -63,6 +63,6 @@ while true; do
         3) delete_student ;;
         4) update_student ;;
         5) echo "Exiting the application." ; exit ;;
-        *) echo "Invalid choice. Please choose again." ;;
+        *) echo "Invalid choice. Please try again Option 1-5." ;;
     esac
 done
