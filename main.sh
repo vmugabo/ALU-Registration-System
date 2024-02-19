@@ -49,7 +49,7 @@ update_student() {
 # Main menu
 while true; do
     echo " ======== NegPod 7 ALU Student Registration System ======= "
-    echo " ==================Select your action: ==================="
+    echo " ================ Select your action: ==================="
     echo "1. Create student record"
     echo "2. View all students"
     echo "3. Delete a student record"
