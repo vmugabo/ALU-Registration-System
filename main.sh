@@ -37,12 +37,12 @@ delete_student() {
 # Function to update a student record # Anselme
 update_student() {
   echo "Enter student ID to update:"
-  read id
+  read idi
   echo "Enter updated email:"
   read email
   echo "Enter updated age:"
   read age
-  sed -i "s/^\b$studentid\b.*/$id $studentemail $studentage/" students-list_1023.txt
+  sed "s/^\b$id\b.*/$id $email $age/" students-list_1023.txt
   echo "Student record updated successfully."
 }
 
