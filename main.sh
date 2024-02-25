@@ -42,14 +42,14 @@ update_student() {
   read email
   echo "Enter updated age:"
   read age
-  sed -i "s/^\b$id\b.*/$id $new_email $new_age/" students-list_1023.txt
+  sed -i "s/^\b$studentid\b.*/$id $studentemail $studentage/" students-list_1023.txt
   echo "Student record updated successfully."
 }
 
 # Main menu
 while true; do
     echo " ======== NegPod 7 ALU Student Registration System ======= "
-    echo " ================ Select your action: ==================="
+    echo " ================ Select your action: ==================="i
     echo "1. Create student record"
     echo "2. View all students"
     echo "3. Delete a student record"
