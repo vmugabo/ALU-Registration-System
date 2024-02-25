@@ -42,7 +42,7 @@ update_student() {
   read email
   echo "Enter updated age:"
   read age
-  sed "s/^\b$id\b.*/$id $email $age/" students-list_1023.txt
+  sed -i "s/^$id,[^,]*,[^,]*/$id $email $age/" students-list_1023.txt
   echo "Student record updated successfully."
 }
 
