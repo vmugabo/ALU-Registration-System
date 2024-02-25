@@ -37,7 +37,7 @@ delete_student() {
 # Function to update a student record # Anselme
 update_student() {
   echo "Enter student ID to update:"
-  read idi
+  read id
   echo "Enter updated email:"
   read email
   echo "Enter updated age:"
